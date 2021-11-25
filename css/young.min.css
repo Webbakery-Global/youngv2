@@ -6558,6 +6558,9 @@ footer {
     margin: 0 0 35px 0;
     padding: 0;
     text-align: left;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   #navbarNavDropdown #main-menu li.menu-item-has-children a {
     margin: 0;
@@ -6573,6 +6576,9 @@ footer {
   }
   #navbarNavDropdown #main-menu li.menu-item-has-children .dropdown-menu li a {
     padding: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   #navbarNavDropdown #main-menu li:nth-child(2) a {
     margin-bottom: 5px;
@@ -24379,6 +24385,9 @@ main {
     margin: 0 0 35px 0;
     padding: 0;
     text-align: left;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   #navbarNavDropdown #main-menu li.menu-item-has-children a {
     margin: 0;
@@ -24394,6 +24403,9 @@ main {
   }
   #navbarNavDropdown #main-menu li.menu-item-has-children .dropdown-menu li a {
     padding: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   #navbarNavDropdown #main-menu li:nth-child(2) a {
     margin-bottom: 5px;
