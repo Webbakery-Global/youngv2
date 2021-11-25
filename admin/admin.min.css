@@ -1,0 +1,174 @@
+.wp-block-webbakery-container {
+  position: relative;
+  border: 1px solid red;
+}
+.wp-block-webbakery-container::before {
+  content: "Container";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 5px;
+}
+.wp-block-webbakery-container .block-editor-block-list__layout {
+  padding: 15px 0;
+}
+
+.wp-block-webbakery-section-block {
+  position: relative;
+  border: 1px dotted blue;
+}
+.wp-block-webbakery-section-block::before {
+  content: "Section";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 5px;
+}
+.wp-block-webbakery-section-block .wp-block-webbakery-container::before {
+  left: 0;
+}
+
+.block-editor-block-list__block .wp-block.block-core-columns {
+  position: relative;
+  padding-top: 25px;
+}
+.block-editor-block-list__block .wp-block.block-core-columns::before {
+  content: "Column";
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.mansory .masonry-grid {
+  position: relative;
+  min-height: 786px;
+}
+.mansory .masonry-grid::before {
+  content: "Dit is een voorbeeld dus niet aanpasbaar! ";
+  background: red;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  text-align: center;
+}
+.mansory .masonry-grid .col-lg-4 {
+  max-width: 33.33333%;
+  margin: 0;
+}
+.mansory .mansory_block {
+  margin-bottom: 30px;
+  float: left;
+}
+.mansory .mansory_block .block {
+  position: relative;
+  overflow: hidden;
+}
+.mansory .mansory_block .block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mansory .mansory_block .block .content {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  overflow: hidden;
+  padding: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.mansory .mansory_block .block .content .btn {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+.mansory .mansory_block .block .title_box {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 20px 5px 25px;
+  border-radius: 20px 0 0 20px;
+  transition: all 0.6s ease-in-out 0.1s;
+  overflow: hidden;
+}
+.mansory .mansory_block .block .title_box .title {
+  position: relative;
+  font-weight: 600;
+  transition: right 0.3s ease-in-out, font-size 0.15s ease-in-out;
+  right: -150%;
+  font-size: 0;
+}
+.mansory .mansory_block .block .title_box i {
+  position: relative;
+  transition: all 0.5s ease-in-out, font-size 0.3s ease-in-out;
+}
+.mansory .mansory_block .block:hover .title_box {
+  padding: 5px 25px 5px 25px;
+}
+.mansory .mansory_block .block:hover .title_box i {
+  font-size: 0;
+  left: -100%;
+}
+.mansory .mansory_block .block:hover .title_box .title {
+  font-size: 16px;
+  right: 0;
+}
+.mansory .mansory_block .block.active .content {
+  overflow: visible;
+  transform: translateX(0);
+}
+.mansory .mansory_block .block {
+  height: 300px;
+}
+.mansory .mansory_block .block img {
+  height: 300px;
+}
+
+.business_projects {
+  padding: 35px 0;
+}
+.business_projects .row {
+  display: flex;
+}
+.business_projects .business_item {
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+}
+.business_projects .business_item img {
+  width: 80%;
+  height: auto;
+  max-height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 15px;
+}
+.business_projects .business_item:first-child {
+  justify-content: flex-start;
+}
+
+.news_overview .row {
+  display: flex;
+}
+.news_overview .row .col-lg-6 {
+  width: 50%;
+}
+.news_overview .row .col-lg-6.post_content {
+  padding: 10px 25px;
+}
