@@ -6481,6 +6481,12 @@ footer {
     padding: 35px 25px;
     border-bottom: 0.5px solid transparent;
   }
+  #wrapper-navbar #logo {
+    height: 25px;
+  }
+  #wrapper-navbar.scrolled-up {
+    padding: 25px 15px;
+  }
   #wrapper-navbar .hamburgerTop, #wrapper-navbar .hamburgerMiddle, #wrapper-navbar .hamburgerBottom {
     background: #080A15;
   }
@@ -6508,6 +6514,7 @@ footer {
   .home #wrapper-navbar.scrolled-up {
     background: #eae9e5;
     border-color: #080A15;
+    padding: 15px;
   }
   .home #wrapper-navbar.scrolled-up #logo .letter {
     fill: #080A15;
@@ -6532,7 +6539,11 @@ footer {
   }
 
   .footer {
-    padding: 50px 15px;
+    padding: 50px 15px 0 15px;
+  }
+
+  .bottom_bar {
+    padding: 0 0 35px 0;
   }
 
   #navbarNavDropdown {
@@ -24291,6 +24302,12 @@ main {
     padding: 35px 25px;
     border-bottom: 0.5px solid transparent;
   }
+  #wrapper-navbar #logo {
+    height: 25px;
+  }
+  #wrapper-navbar.scrolled-up {
+    padding: 25px 15px;
+  }
   #wrapper-navbar .hamburgerTop, #wrapper-navbar .hamburgerMiddle, #wrapper-navbar .hamburgerBottom {
     background: #080A15;
   }
@@ -24318,6 +24335,7 @@ main {
   .home #wrapper-navbar.scrolled-up {
     background: #eae9e5;
     border-color: #080A15;
+    padding: 15px;
   }
   .home #wrapper-navbar.scrolled-up #logo .letter {
     fill: #080A15;
@@ -24342,7 +24360,11 @@ main {
   }
 
   .footer {
-    padding: 50px 15px;
+    padding: 50px 15px 0 15px;
+  }
+
+  .bottom_bar {
+    padding: 0 0 35px 0;
   }
 
   #navbarNavDropdown {
