@@ -6772,7 +6772,7 @@ footer {
   max-width: 100vw;
   width: 100%;
   left: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: #fff;
   border-bottom: 0.5px solid #080A15;
 }
