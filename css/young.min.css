@@ -6325,6 +6325,26 @@ footer {
   font-family: "Scala Sans";
 }
 
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .btn {
   text-decoration: none;
   display: block;
@@ -6548,6 +6568,30 @@ footer {
 
   #navbarNavDropdown {
     background: #eae9e5;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(1) a {
+    -webkit-animation: fadeInUp 2s;
+            animation: fadeInUp 2s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(2) a {
+    -webkit-animation: fadeInUp 2.2s;
+            animation: fadeInUp 2.2s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(3) a {
+    -webkit-animation: fadeInUp 2.4s;
+            animation: fadeInUp 2.4s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(4) a {
+    -webkit-animation: fadeInUp 2.6s;
+            animation: fadeInUp 2.6s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(5) a {
+    -webkit-animation: fadeInUp 2.8s;
+            animation: fadeInUp 2.8s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(6) a {
+    -webkit-animation: fadeInUp 3s;
+            animation: fadeInUp 3s;
   }
   #navbarNavDropdown #main-menu {
     margin-top: 50px;
@@ -24375,6 +24419,30 @@ main {
 
   #navbarNavDropdown {
     background: #eae9e5;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(1) a {
+    -webkit-animation: fadeInUp 2s;
+            animation: fadeInUp 2s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(2) a {
+    -webkit-animation: fadeInUp 2.2s;
+            animation: fadeInUp 2.2s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(3) a {
+    -webkit-animation: fadeInUp 2.4s;
+            animation: fadeInUp 2.4s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(4) a {
+    -webkit-animation: fadeInUp 2.6s;
+            animation: fadeInUp 2.6s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(5) a {
+    -webkit-animation: fadeInUp 2.8s;
+            animation: fadeInUp 2.8s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(6) a {
+    -webkit-animation: fadeInUp 3s;
+            animation: fadeInUp 3s;
   }
   #navbarNavDropdown #main-menu {
     margin-top: 50px;
