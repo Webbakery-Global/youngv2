@@ -6223,6 +6223,9 @@ body {
 .business_projects .business_item:first-child {
   justify-content: flex-start;
 }
+.business_projects .business_item:last-child {
+  margin-bottom: 50px;
+}
 
 .business_projects_overview .project_info {
   margin-bottom: 100px;
@@ -6472,7 +6475,7 @@ footer {
     right: -100%;
     width: 100%;
     padding-top: 70px;
-    padding-left: 25px;
+    padding-left: 15px;
     height: 100vh;
     transition: all 0.3s ease-in-out;
     justify-content: start;
@@ -6491,7 +6494,7 @@ footer {
   }
 
   #wrapper-navbar {
-    padding: 35px 25px;
+    padding: 35px 15px;
     border-bottom: 0.5px solid transparent;
   }
   #wrapper-navbar #logo {
@@ -24360,7 +24363,7 @@ footer h3 {
     right: -100%;
     width: 100%;
     padding-top: 70px;
-    padding-left: 25px;
+    padding-left: 15px;
     height: 100vh;
     transition: all 0.3s ease-in-out;
     justify-content: start;
@@ -24379,7 +24382,7 @@ footer h3 {
   }
 
   #wrapper-navbar {
-    padding: 35px 25px;
+    padding: 35px 15px;
     border-bottom: 0.5px solid transparent;
   }
   #wrapper-navbar #logo {
