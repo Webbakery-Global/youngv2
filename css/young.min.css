@@ -5996,8 +5996,9 @@ body {
   background-color: #aaa196;
   padding: 75px;
 }
-.cta h2 {
+.cta h3 {
   margin-bottom: 25px;
+  font-weight: 500;
 }
 .cta p {
   margin-bottom: 35px;
@@ -6471,6 +6472,7 @@ footer {
     padding-left: 25px;
     height: 100vh;
     transition: all 0.3s ease-in-out;
+    justify-content: start;
   }
   #navbarNavDropdown.active {
     right: 0;
@@ -6539,8 +6541,8 @@ footer {
     display: none;
   }
 
-  .intro .button {
-    margin: 0 !important;
+  .footer #footer_logo {
+    margin-left: 0;
   }
 
   .cta {
@@ -6557,6 +6559,15 @@ footer {
 
   #navbarNavDropdown {
     background: #eae9e5;
+  }
+  #navbarNavDropdown.active #main-menu {
+    display: block;
+  }
+  #navbarNavDropdown.active #main-menu > li.languages {
+    display: inline-block;
+  }
+  #navbarNavDropdown.active #main-menu > li.languages.nl {
+    margin-right: 10px;
   }
   #navbarNavDropdown.active #main-menu > li:nth-child(1) a {
     -webkit-animation: fadeInUp 2s;
@@ -6581,6 +6592,10 @@ footer {
   #navbarNavDropdown.active #main-menu > li:nth-child(6) a {
     -webkit-animation: fadeInUp 3s;
             animation: fadeInUp 3s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(7) a, #navbarNavDropdown.active #main-menu > li:nth-child(8) a {
+    -webkit-animation: fadeInUp 3.2s;
+            animation: fadeInUp 3.2s;
   }
   #navbarNavDropdown #main-menu {
     margin-top: 50px;
@@ -6716,10 +6731,10 @@ footer {
   .business_projects .business_item {
     width: 100%;
     justify-content: center !important;
-    margin-bottom: 35px;
+    margin-bottom: 100px;
   }
   .business_projects .business_item img {
-    width: 200px;
+    width: 150px;
   }
 
   .business_projects_overview .project_info {
@@ -6757,7 +6772,7 @@ footer {
   }
 
   p, a, li {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 28px;
   }
 
@@ -24345,6 +24360,7 @@ footer h3 {
     padding-left: 25px;
     height: 100vh;
     transition: all 0.3s ease-in-out;
+    justify-content: start;
   }
   #navbarNavDropdown.active {
     right: 0;
@@ -24413,8 +24429,8 @@ footer h3 {
     display: none;
   }
 
-  .intro .button {
-    margin: 0 !important;
+  .footer #footer_logo {
+    margin-left: 0;
   }
 
   .cta {
@@ -24431,6 +24447,15 @@ footer h3 {
 
   #navbarNavDropdown {
     background: #eae9e5;
+  }
+  #navbarNavDropdown.active #main-menu {
+    display: block;
+  }
+  #navbarNavDropdown.active #main-menu > li.languages {
+    display: inline-block;
+  }
+  #navbarNavDropdown.active #main-menu > li.languages.nl {
+    margin-right: 10px;
   }
   #navbarNavDropdown.active #main-menu > li:nth-child(1) a {
     -webkit-animation: fadeInUp 2s;
@@ -24455,6 +24480,10 @@ footer h3 {
   #navbarNavDropdown.active #main-menu > li:nth-child(6) a {
     -webkit-animation: fadeInUp 3s;
             animation: fadeInUp 3s;
+  }
+  #navbarNavDropdown.active #main-menu > li:nth-child(7) a, #navbarNavDropdown.active #main-menu > li:nth-child(8) a {
+    -webkit-animation: fadeInUp 3.2s;
+            animation: fadeInUp 3.2s;
   }
   #navbarNavDropdown #main-menu {
     margin-top: 50px;
@@ -24590,10 +24619,10 @@ footer h3 {
   .business_projects .business_item {
     width: 100%;
     justify-content: center !important;
-    margin-bottom: 35px;
+    margin-bottom: 100px;
   }
   .business_projects .business_item img {
-    width: 200px;
+    width: 150px;
   }
 
   .business_projects_overview .project_info {
@@ -24631,7 +24660,7 @@ footer h3 {
   }
 
   p, a, li {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 28px;
   }
 
