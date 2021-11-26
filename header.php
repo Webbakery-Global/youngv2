@@ -36,7 +36,7 @@ $container = get_theme_mod('understrap_container_type');
     <!-- ******************* The Navbar Area ******************* -->
     <div id="wrapper-navbar">
         <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
-            <div class="container">
+            <div class="container ">
 
                 <a href="<?php echo get_site_url(); ?>/">
                     <svg id="logo" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.46 8.93">
@@ -66,7 +66,7 @@ $container = get_theme_mod('understrap_container_type');
                         'theme_location' => 'mobile',
                         'container_class' => '',
                         'container_id' => 'navbarNavDropdown',
-                        'menu_class' => 'navbar-nav ml-auto',
+                        'menu_class' => 'navbar-nav',
                         'fallback_cb' => '',
                         'menu_id' => 'main-menu',
                         'depth' => 3,
@@ -74,6 +74,8 @@ $container = get_theme_mod('understrap_container_type');
                     )
                 );
                 ?>
+     
+
                 <div class="hamburger d-lg-none">
                     <div class="hamburgerTop"></div>
                     <div class="hamburgerMiddle"></div>
