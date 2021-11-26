@@ -6018,6 +6018,9 @@ body {
     height: calc(100vh - 5.1666666667vw);
   }
 }
+.full_header h1 {
+  font-weight: 300;
+}
 .full_header .btn {
   position: absolute;
   bottom: 10vh;
