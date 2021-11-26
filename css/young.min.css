@@ -5941,7 +5941,7 @@ a {
 
 /* Colors and Fonts */
 body {
-  color: #1d1d1b;
+  color: #000;
   font-size: 1rem;
   line-height: 28px;
   letter-spacing: 1.2px;
@@ -6864,7 +6864,7 @@ footer {
   color: #1d1d1b;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
   padding: 2px 15px;
   letter-spacing: 1px;
 }
