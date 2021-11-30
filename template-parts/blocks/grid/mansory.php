@@ -37,7 +37,7 @@ if (!empty($block['align'])) {
                     <?php if ($content = get_the_content()) : ?>
                     <div class="content">
                         <?php the_content(); ?>
-                        <a class="btn btn_arrow_right" href="<?php the_permalink(); ?>">Meer informatie<i
+                        <a class="btn btn_arrow_right" href="<?php the_permalink(); ?>"><?php _e('More information', 'young'); ?><i
                                     class="far fa-chevron-double-right"></i></a>
                     </div>
                     <?php endif; ?>

@@ -42,7 +42,7 @@ if (!empty($block['align'])) {
                         </div>
                     </div>
                     <a class="btn btn_arrow_left" href="<?php the_permalink(); ?>"><i
-                                class="far fa-long-arrow-alt-right"></i>Lees verder.</a>
+                                class="far fa-long-arrow-alt-right"></i><?php _e('Read more', 'Young'); ?>.</a>
                 </div>
 
             <?php endif; ?>

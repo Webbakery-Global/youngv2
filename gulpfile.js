@@ -38,7 +38,7 @@ gulp.task('scripts', gulp.series(function (done) {
         'assets/js/**/*.js',
         '!assets/js/**/*.min.js'
     ])
-        .pipe(concat('luijten.js'))
+        .pipe(concat('young.js'))
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(rename({suffix: '.min'}))

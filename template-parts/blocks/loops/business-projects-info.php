@@ -69,8 +69,7 @@ if (!empty($block['align'])) {
                                     </div>
                                     <?php if ($link_to_website = get_field('link_to_website', $post->ID)) : ?>
                                         <a class="btn btn_arrow_left" href="<?php echo esc_url($link_to_website); ?>" target="_blank"><i
-                                                    class="far fa-long-arrow-alt-right"></i>Lees meer informatie op de
-                                            website.</a>
+                                                    class="far fa-long-arrow-alt-right"></i><?php _e('Read more information on the website', 'young'); ?>.</a>
                                     <?php endif; ?>
                                 </div>
 
