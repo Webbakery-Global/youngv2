@@ -65,7 +65,7 @@ add_action('add_jquery', 'my_register_script_method');
 
 function add_child_theme_textdomain()
 {
-    load_child_theme_textdomain('webtheme', get_stylesheet_directory() . '/languages');
+    load_child_theme_textdomain('young', get_stylesheet_directory() . '/languages');
 }
 
 add_action('after_setup_theme', 'add_child_theme_textdomain');
@@ -90,9 +90,7 @@ add_filter('show_admin_bar', '__return_false');
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus(
     array(
-        'links' => esc_html__('Menu Links', 'thebridge'),
-        'rechts' => esc_html__('Menu rechts', 'thebridge'),
-        'mobile' => esc_html__('Mobile menu', 'thebridge'),
+        'mobile' => esc_html__('Primray Menu', 'young'),
     )
 );
 

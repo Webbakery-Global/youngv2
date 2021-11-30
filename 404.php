@@ -15,7 +15,7 @@ $container = get_theme_mod('understrap_container_type');
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center content">
-                    <h1><?php _e('Geen pagina gevonden', 'webbakery'); ?>..</h1>
+                    <h1><?php _e('Geen pagina gevonden', 'young'); ?>..</h1>
                     <a class="btn btn-gold mt-4 mx-auto" href="<?php echo get_site_url(); ?>">Terug naar de homepage</a>
                 </div>
             </div>
