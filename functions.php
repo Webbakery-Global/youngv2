@@ -90,7 +90,7 @@ add_filter('show_admin_bar', '__return_false');
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus(
     array(
-        'mobile' => esc_html__('Primray Menu', 'young'),
+        'mobile' => esc_html__('Primary Menu', 'young'),
     )
 );
 

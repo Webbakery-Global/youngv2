@@ -6018,6 +6018,18 @@ body {
     height: calc(100vh - 5.1666666667vw);
   }
 }
+.full_header .header_video {
+  position: absolute;
+  height: calc(100vh - 93px);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  .full_header .header_video {
+    height: calc(100vh - 5.1666666667vw);
+  }
+}
 .full_header h1 {
   font-weight: 300;
 }
