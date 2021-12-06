@@ -171,5 +171,16 @@ function register_acf_block_types()
             'keywords' => array('social', 'link')
         )
     );
+    acf_register_block_type(
+        array(
+            'name' => 'Video',
+            'title' => ('Video'),
+            'description' => _('Video'),
+            'category' => 'webbakery-gutenberg-blocks',
+            'render_template' => 'template-parts/blocks/content/video.php',
+            'icon' => 'welcome-view-site',
+            'keywords' => array('video')
+        )
+    );
 }
 

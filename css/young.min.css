@@ -6352,6 +6352,18 @@ footer {
     opacity: 1;
   }
 }
+.video_block {
+  position: relative;
+}
+.video_block .half_video {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  margin-left: 50px;
+}
+
 .btn {
   text-decoration: none;
   display: block;
