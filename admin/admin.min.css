@@ -66,6 +66,16 @@
   z-index: 99;
   text-align: center;
 }
+.mansory .masonry-grid::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
 .mansory .masonry-grid .col-lg-4 {
   max-width: 33.33333%;
   margin: 0;
@@ -171,4 +181,37 @@
 }
 .news_overview .row .col-lg-6.post_content {
   padding: 10px 25px;
+}
+
+.business_projects_overview {
+  position: relative;
+}
+.business_projects_overview::before {
+  content: "Dit is een voorbeeld dus niet aanpasbaar! ";
+  background: red;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  text-align: center;
+}
+.business_projects_overview::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.business_projects_overview .row {
+  display: grid;
+}
+.business_projects_overview .col-lg-6 {
+  width: 50%;
 }
