@@ -55,8 +55,10 @@ if (!empty($block['align'])) {
 
                     <?php while ($posts->have_posts()) : $posts->the_post();
                         global $post;
-                        $slug = $post->post_name; ?>
-                        <?php if ( get_field( 'exit' ) == false ) : ?>
+                        $slug = $post->post_name;
+                        if (get_field('exit', $post->ID) === false) : ?>
+
+
                         <div id="<?= $slug ?>" class="col-sm-12 project_info">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-6 img_column">
