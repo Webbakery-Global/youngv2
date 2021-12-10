@@ -6889,6 +6889,7 @@ footer {
   z-index: 90;
   border-radius: 0;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 #navbarNavDropdown #main-menu > li > .dropdown-menu li a {
   color: #1d1d1b;

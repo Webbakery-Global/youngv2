@@ -67,7 +67,6 @@ if (!empty($block['align'])) {
                                 </div>
                                 <div class="col-sm-12 col-lg-6 content_column">
                                     <div class="content">
-                                        <h5 class="subtitle"><?php echo $term->name; ?></h5>
                                         <h3><?php echo get_the_title(); ?></h3>
                                         <?php the_content(); ?>
                                     </div>

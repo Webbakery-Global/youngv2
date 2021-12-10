@@ -4,22 +4,22 @@ function business()
 {
 
     $labels = array(
-        'name' => _x('Business Investments', 'Post Type General Name', 'young'),
-        'singular_name' => _x('Business', 'Post Type Singular Name', 'young'),
-        'menu_name' => __('Business Investments', 'young'),
+        'name' => _x('Venture Capital', 'Post Type General Name', 'young'),
+        'singular_name' => _x('Venture Capital', 'Post Type Singular Name', 'young'),
+        'menu_name' => __('Venture Capital', 'young'),
         'name_admin_bar' => __('Business', 'young'),
         'archives' => __('Item Archives', 'young'),
         'attributes' => __('Item Attributes', 'young'),
         'parent_item_colon' => __('Parent Item:', 'young'),
-        'all_items' => __('Alle business', 'young'),
+        'all_items' => __('All Venture Capital', 'young'),
         'add_new_item' => __('Add New Item', 'young'),
-        'add_new' => __('Voeg nieuw business toe', 'young'),
-        'new_item' => __('Voeg nieuw business toe', 'young'),
-        'edit_item' => __('Wijzig business', 'young'),
-        'update_item' => __('Update business', 'young'),
-        'view_item' => __('Bekijk business', 'young'),
-        'view_items' => __('Bekijk business', 'young'),
-        'search_items' => __('Zoek business', 'young'),
+        'add_new' => __('Voeg nieuw Capital toe', 'young'),
+        'new_item' => __('Voeg nieuw Capital toe', 'young'),
+        'edit_item' => __('Wijzig Capital', 'young'),
+        'update_item' => __('Update Capital', 'young'),
+        'view_item' => __('Bekijk Capital', 'young'),
+        'view_items' => __('Bekijk Capital', 'young'),
+        'search_items' => __('Zoek Capital', 'young'),
         'not_found' => __('Not found', 'young'),
         'not_found_in_trash' => __('Not found in Trash', 'young'),
         'featured_image' => __('Logo', 'young'),
@@ -33,8 +33,8 @@ function business()
         'filter_items_list' => __('Filter items list', 'young'),
     );
     $args = array(
-        'label' => __('Business', 'young'),
-        'description' => __('Business', 'young'),
+        'label' => __('Venture Capital', 'young'),
+        'description' => __('Venture Capital', 'young'),
         'labels' => $labels,
         'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
         'taxonomies' => array('business_category'),
@@ -65,9 +65,9 @@ function business_category()
 {
 
     $labels = array(
-        'name' => _x('Businesscategorieen', 'Taxonomy General Name', 'young'),
-        'singular_name' => _x('Businesscategorie', 'Taxonomy Singular Name', 'young'),
-        'menu_name' => __('Business categorie', 'young'),
+        'name' => _x('Venture Capital categorieen', 'Taxonomy General Name', 'young'),
+        'singular_name' => _x('Venture Capital categorie', 'Taxonomy Singular Name', 'young'),
+        'menu_name' => __('Venture Capital categorie', 'young'),
         'all_items' => __('Alle categorieën', 'young'),
         'parent_item' => __('Parent Item', 'young'),
         'parent_item_colon' => __('Parent Item:', 'young'),
