@@ -6382,7 +6382,11 @@ footer {
   font-family: "Scala Sans" !important;
 }
 .wpforms-field-container input, .wpforms-field-container textarea {
-  border-color: #1d1d1b;
+  border-color: #1d1d1b !important;
+}
+.wpforms-field-container .wpforms-submit {
+  background: #1d1d1b;
+  font-family: "Scala Sans" !important;
 }
 
 .wpforms-container ::-webkit-input-placeholder {
