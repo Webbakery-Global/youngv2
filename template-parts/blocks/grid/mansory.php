@@ -31,7 +31,7 @@ if (!empty($block['align'])) {
             <div class="col-sm-12 col-lg-4  mansory_block masonry-column">
                 <div class="block block_<?php echo $blockNumber++; ?>">
                     <?php echo get_the_post_thumbnail($post_id, 'large', array('class' => 'project_thubmnail')) ?>
-                    <?php if ( get_field('toon_titel', $post_id) == true) : ?>
+                    <?php if ( get_field('toon_titel', $post_id) === true) : ?>
                     <div class="title_box no_title"><i class="far fa-plus"></i></div>
                     <?php else : ?>
                     <div class="title_box">
