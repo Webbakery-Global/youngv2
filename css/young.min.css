@@ -6378,6 +6378,40 @@ footer {
   margin-left: 50px;
 }
 
+.wpforms-field-container {
+  font-family: "Scala Sans" !important;
+}
+.wpforms-field-container input, .wpforms-field-container textarea {
+  border-color: #1d1d1b;
+}
+
+.wpforms-container ::-webkit-input-placeholder {
+  /* Chrome and Safari */
+  color: #1d1d1b;
+}
+
+.wpforms-container :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #1d1d1b;
+  opacity: 1;
+}
+
+.wpforms-container ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #1d1d1b;
+  opacity: 1;
+}
+
+.wpforms-container :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #1d1d1b;
+}
+
+.wpforms-container ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #1d1d1b;
+}
+
 .btn {
   text-decoration: none;
   display: block;
