@@ -6163,28 +6163,41 @@ body {
   border-radius: 20px 0 0 20px;
   transition: all 0.6s ease-in-out 0.1s;
   overflow: hidden;
+  height: 38px;
+  display: flex;
+  align-items: center;
 }
 .mansory .mansory_block .block .title_box .title {
   position: relative;
   font-weight: 600;
-  transition: right 0.3s ease-in-out, font-size 0.15s ease-in-out;
-  right: -150%;
+  transition: right 0.3s ease-in-out 0.1s, font-size 0.15s ease-in-out 0.1s, display 0.3s ease-in-out;
+  right: -500%;
   font-size: 0;
+  overflow: hidden;
+  width: 0;
+  display: flex;
 }
 .mansory .mansory_block .block .title_box i {
   position: relative;
-  transition: all 0.5s ease-in-out, font-size 0.3s ease-in-out;
+  transition: all 0.3s linear;
+  opacity: 1;
 }
 .mansory .mansory_block .block:hover .title_box {
   padding: 5px 25px 5px 25px;
 }
+.mansory .mansory_block .block:hover .title_box.no_title i {
+  font-size: 16px;
+  left: unset;
+}
 .mansory .mansory_block .block:hover .title_box i {
   font-size: 0;
-  left: -100%;
+  right: -100%;
+  opacity: 0;
 }
 .mansory .mansory_block .block:hover .title_box .title {
   font-size: 16px;
   right: 0;
+  width: 100%;
 }
 .mansory .mansory_block .block.active .content {
   overflow: visible;
@@ -6863,12 +6876,12 @@ footer {
   letter-spacing: 1.8px;
 }
 #navbarNavDropdown #main-menu > li > .nav-link {
-  padding: 30px 15px;
+  padding: 30px 10px;
   position: relative;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   #navbarNavDropdown #main-menu > li > .nav-link {
-    padding: 1.6666666667vw 0.8333333333vw;
+    padding: 1.6666666667vw 0.5555555556vw;
   }
 }
 #navbarNavDropdown #main-menu > li > .nav-link::before {
