@@ -6187,7 +6187,8 @@ body {
 }
 .mansory .mansory_block .block:hover .title_box.no_title i {
   font-size: 16px;
-  left: unset;
+  right: unset;
+  opacity: 1;
 }
 .mansory .mansory_block .block:hover .title_box i {
   font-size: 0;
