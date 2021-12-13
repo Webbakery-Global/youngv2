@@ -30,7 +30,7 @@ if (!empty($block['align'])) {
             if (!empty($terms)) :
                 $term = array_shift($terms); ?>
 
-                <div class="col-sm-12 col-lg-6 post_img mb-2">
+                <div class="col-sm-12 col-lg-6 post_img mb-2 mb-lg-5">
                     <a href="<?php the_permalink(); ?>">
                     <?php echo get_the_post_thumbnail($post->ID, 'post_thumbnail', array('class' => 'logo')) ?>
                     </a>
