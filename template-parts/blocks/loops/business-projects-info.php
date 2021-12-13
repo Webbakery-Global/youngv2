@@ -59,11 +59,6 @@ if (!empty($block['align'])) {
                         if (get_field('exit', $post->ID) === false) :
                             if ( get_field( 'toon', $post->ID ) === true ) : ?>
 
-
-
-
-
-
                         <div id="<?= $slug ?>" class="col-sm-12 project_info">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-6 img_column">
@@ -73,7 +68,7 @@ if (!empty($block['align'])) {
                                 <div class="col-sm-12 col-lg-6 content_column">
                                     <div class="content">
                                         <h3><?php echo get_the_title(); ?></h3>
-                                        <?php echo wp_trim_words( get_the_content(), 40, '...' ); ?>
+                                       <p> <?php echo wp_trim_words( get_the_content(), 40, '...' ); ?></p>
                                     </div>
                                     <?php if ($link_to_website = get_field('link_to_website', $post->ID)) : ?>
                                         <a class="btn btn_arrow_left" href="<?php echo esc_url($link_to_website); ?>" target="_blank"><i
