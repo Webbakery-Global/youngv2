@@ -31,14 +31,17 @@ if (!empty($block['align'])) {
                 $term = array_shift($terms); ?>
 
                 <div class="col-sm-12 col-lg-6 post_img mb-2">
+                    <a href="<?php the_permalink(); ?>">
                     <?php echo get_the_post_thumbnail($post->ID, 'post_thumbnail', array('class' => 'logo')) ?>
+                    </a>
                 </div>
                 <div class="col-sm-12 col-lg-6 post_content mb-5">
                     <div class="content">
                         <h5 class="subtitle"><?php echo $term->name; ?></h5>
                         <h3><?php the_title(); ?></h3>
                         <div class="text_content">
-                            <?php echo wp_trim_words(wp_strip_all_tags(get_the_content()), 100); ?>
+
+                            <p><?php echo wp_trim_words(wp_strip_all_tags(get_the_content()), 60); ?></p>
                         </div>
                     </div>
                     <a class="btn btn_arrow_left" href="<?php the_permalink(); ?>"><i

@@ -21,7 +21,7 @@ if (!empty($block['align'])) {
             ?>
 
             <div class="col-sm-12 col-lg-4 mb-2 mb-lg-0">
-                <a href="<?php echo get_site_url() ?>/projecten">
+                <a href="<?php echo get_site_url() ?>/real-estate/">
                     <?php echo get_the_post_thumbnail($project->ID, 'large', array('class' => 'project_thubmnail')) ?>
                 </a>
             </div>

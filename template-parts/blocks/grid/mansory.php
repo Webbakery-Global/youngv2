@@ -29,8 +29,12 @@ if (!empty($block['align'])) {
 
             ?>
             <div class="col-sm-12 col-lg-4  mansory_block masonry-column">
-                <div class="block block_<?php echo $blockNumber++; ?>">
+                <div class="block ">
+                    <?php if ($website_url = get_field('website_url', $post_id)) : ?>
+                        <a target="_blank" href="<?= $website_url; ?>"><?php echo get_the_post_thumbnail($post_id, 'large', array('class' => 'project_thubmnail')) ?></a>
+                    <?php else : ?>
                     <?php echo get_the_post_thumbnail($post_id, 'large', array('class' => 'project_thubmnail')) ?>
+                    <?php endif; ?>
                     <?php if ( get_field('toon_titel', $post_id) === true) : ?>
                     <div class="title_box no_title"><i class="far fa-plus"></i></div>
                     <?php else : ?>
