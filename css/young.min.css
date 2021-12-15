@@ -6711,12 +6711,6 @@ footer {
     width: -moz-max-content;
     width: max-content;
   }
-  #navbarNavDropdown #main-menu li:nth-child(2) a {
-    margin-bottom: 5px;
-  }
-  #navbarNavDropdown #main-menu li:nth-child(5) a {
-    margin-bottom: 5px;
-  }
 
   .mansory .mansory_block {
     margin-bottom: 30px;
@@ -24599,12 +24593,6 @@ footer h3 {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-  }
-  #navbarNavDropdown #main-menu li:nth-child(2) a {
-    margin-bottom: 5px;
-  }
-  #navbarNavDropdown #main-menu li:nth-child(5) a {
-    margin-bottom: 5px;
   }
 
   .mansory .mansory_block {
