@@ -39,6 +39,7 @@ if (!empty($block['align'])) {
                     <div class="content">
                         <h5 class="subtitle"><?php echo $term->name; ?></h5>
                         <h3><?php the_title(); ?></h3>
+                        <p class="date"><?php the_date( 'd M Y'); ?></p>
                         <div class="text_content">
 
                             <p><?php echo wp_trim_words(wp_strip_all_tags(get_the_content()), 60); ?></p>
