@@ -6648,6 +6648,7 @@ footer {
   }
   #navbarNavDropdown.active #main-menu > li.languages {
     display: inline-block;
+    margin-top: 25px;
   }
   #navbarNavDropdown.active #main-menu > li.languages.nl {
     margin-right: 10px;
@@ -24531,6 +24532,7 @@ footer h3 {
   }
   #navbarNavDropdown.active #main-menu > li.languages {
     display: inline-block;
+    margin-top: 25px;
   }
   #navbarNavDropdown.active #main-menu > li.languages.nl {
     margin-right: 10px;
