@@ -6520,6 +6520,10 @@ footer {
     justify-content: flex-start;
   }
 
+  .video_block .half_video {
+    margin-left: 0;
+  }
+
   #wrapper-navbar {
     padding: 15px;
     top: 0;
@@ -24402,6 +24406,10 @@ footer h3 {
 
   .navbar > .container, .navbar > .container-fluid {
     justify-content: flex-start;
+  }
+
+  .video_block .half_video {
+    margin-left: 0;
   }
 
   #wrapper-navbar {
