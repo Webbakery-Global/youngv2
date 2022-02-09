@@ -43,7 +43,7 @@ if (!empty($block['align'])) {
 
 <?php if (get_field('afbeelding') == "video") : ?>
     <div class="<?php echo esc_attr($className); ?> d-flex align-items-center ">
-        <video class="header_video" autoplay muted loop>
+        <video class="header_video" playsinline autoplay muted loop>
             <source src="<?php the_field('video');?>" type="video/mp4">
             Your browser does not support the video tag.
         </video>

@@ -22,9 +22,12 @@ $container = get_theme_mod('understrap_container_type');
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/vfp6lcl.css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/aos.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://kit.fontawesome.com/eb84190e1d.js" crossorigin="anonymous"></script>
 
     <?php wp_head(); ?>
 </head>

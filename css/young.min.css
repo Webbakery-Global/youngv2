@@ -6077,10 +6077,10 @@ body {
   border-color: #1d1d1b;
 }
 
-.home, .page-template-gray {
+.home, .page-template-gray, .single-projecten {
   background: #eae9e5;
 }
-.home #wrapper-navbar, .page-template-gray #wrapper-navbar {
+.home #wrapper-navbar, .page-template-gray #wrapper-navbar, .single-projecten #wrapper-navbar {
   background: #eae9e5;
 }
 
@@ -7418,6 +7418,226 @@ footer h3 {
   display: none;
 }
 
+#portfolio .button-group .button {
+  background: transparent;
+  border: none;
+  position: relative;
+  font-weight: 600;
+  outline: none;
+  padding: 0 25px 15px 25px;
+  margin: 0;
+  font-family: "Scala Sans";
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #portfolio .button-group .button {
+    padding: 0 1.3888888889vw 0.8333333333vw 1.3888888889vw;
+  }
+}
+#portfolio .button-group .button:first-child {
+  padding-left: 0;
+}
+#portfolio .button-group .button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #1d1d1b;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #portfolio .button-group .button::before {
+    height: 0.1111111111vw;
+  }
+}
+#portfolio .button-group .button:hover::before {
+  width: 100%;
+}
+#portfolio .button-group .button.is-checked {
+  font-weight: 700;
+}
+#portfolio .button-group .button.is-checked::before {
+  width: 100%;
+}
+#portfolio .project_overview {
+  background: #89827e;
+  padding: 50px 50px 0 50px;
+  transition: all 0.2s ease-in-out;
+  height: auto;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #portfolio .project_overview {
+    padding: 2.7777777778vw 2.7777777778vw 0 2.7777777778vw;
+  }
+}
+
+.element-item {
+  padding: 0 25px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  .element-item {
+    padding: 0 1.3888888889vw;
+    margin-bottom: 2.7777777778vw;
+  }
+}
+.element-item .project_box {
+  height: 250px;
+  width: 335px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  .element-item .project_box {
+    height: 13.8888888889vw;
+    width: 18.6111111111vw;
+  }
+}
+.element-item .project_box::before {
+  content: "";
+  background: rgba(234, 233, 229, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.element-item .project_box .thumbnail {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  .element-item .project_box .thumbnail {
+    height: 13.8888888889vw;
+  }
+}
+.element-item .project_box .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  max-width: 150px;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  .element-item .project_box .logo {
+    max-width: 8.3333333333vw;
+  }
+}
+.element-item .project_box .arrow {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 3;
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  .element-item .project_box .arrow {
+    bottom: 1.3888888889vw;
+    left: 1.3888888889vw;
+  }
+}
+.element-item:hover .project_box::before {
+  background: rgba(234, 233, 229, 0.5);
+}
+.element-item:hover .project_box .logo {
+  transform: translate(-50%, -80%);
+}
+.element-item:hover .project_box .arrow {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#single_project .thumbnail {
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #single_project .thumbnail {
+    height: 38.8888888889vw;
+  }
+}
+#single_project .info_block {
+  padding: 25px;
+  color: #1d1d1b;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #single_project .info_block {
+    padding: 1.3888888889vw;
+  }
+}
+#single_project .info_block .block {
+  margin-bottom: 15px;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #single_project .info_block .block {
+    margin-bottom: 0.8333333333vw;
+  }
+}
+#single_project .info_block .block h5 {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #single_project .info_block .block h5 {
+    font-size: 1.1111111111vw;
+    line-height: 1.4444444444vw;
+  }
+}
+#single_project .info_block .block p {
+  font-weight: 500;
+}
+#single_project .image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#related_projects {
+  margin-top: 50px;
+}
+#related_projects .project_overview {
+  background: #89827e;
+  padding: 50px 50px 0 50px;
+  transition: all 0.2s ease-in-out;
+  height: auto;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #related_projects .project_overview {
+    padding: 2.7777777778vw 2.7777777778vw 0 2.7777777778vw;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  #related_projects .project_overview {
+    padding: 25px 25px 0 25px;
+  }
+
+  .element-item {
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .element-item .project_box {
+    width: 100%;
+  }
+
+  #single_project .thumbnail {
+    height: 350px;
+    width: 100%;
+  }
+}
 /*!
  * Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)

@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // init Isotope
-    var $grid = $('.overview').isotope({
+    var $grid = $('.all_partners').isotope({
         itemSelector: '.element-item',
 
     });

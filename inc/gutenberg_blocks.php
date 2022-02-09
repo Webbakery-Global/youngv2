@@ -182,5 +182,16 @@ function register_acf_block_types()
             'keywords' => array('video')
         )
     );
+    acf_register_block_type(
+        array(
+            'name' => 'Portfolio',
+            'title' => ('Portfolio'),
+            'description' => _('Portfolio'),
+            'category' => 'webbakery-gutenberg-blocks',
+            'render_template' => 'template-parts/blocks/portfolio.php',
+            'icon' => 'grid-view',
+            'keywords' => array('portfolio')
+        )
+    );
 }
 
