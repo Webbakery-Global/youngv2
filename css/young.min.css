@@ -7558,6 +7558,7 @@ footer h3 {
 
 #single_project .thumbnail {
   height: 450px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
