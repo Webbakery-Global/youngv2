@@ -7557,13 +7557,13 @@ footer h3 {
 }
 
 #single_project .thumbnail {
-  height: 700px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   #single_project .thumbnail {
-    height: 38.8888888889vw;
+    height: 25vw;
   }
 }
 #single_project .info_block {
