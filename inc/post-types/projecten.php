@@ -47,7 +47,7 @@ function projecten()
         'show_in_nav_menus' => true,
         'can_export' => true,
         'has_archive' => true,
-        'exclude_from_search' => false,
+        'exclude_from_search' => true,
         'publicly_queryable' => true,
         'capability_type' => 'post',
         'show_in_rest' => true,
@@ -88,7 +88,7 @@ function project_categorie()
     );
     $args = array(
         'labels' => $labels,
-        'hierarchical' => false,
+        'hierarchical' => true,
         'public' => true,
         'show_ui' => true,
         'show_admin_column' => true,
