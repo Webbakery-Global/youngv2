@@ -6862,6 +6862,12 @@ footer {
     order: -1;
   }
 
+  #portfolio .button-group .button {
+    padding: 0 15px 15px 15px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
   footer .footer_links {
     -moz-columns: 2;
          columns: 2;
@@ -24973,6 +24979,12 @@ footer h3 {
 
   .order-1 {
     order: -1;
+  }
+
+  #portfolio .button-group .button {
+    padding: 0 15px 15px 15px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   footer .footer_links {

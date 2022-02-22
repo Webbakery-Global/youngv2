@@ -1,7 +1,7 @@
 <section id="portfolio">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 px-0">
+            <div class="col-sm-12 px-lg-0">
 
                 <div class="button-group projects filters-button-group">
                     <button class="button is-checked" data-filter="*"><?php _e('All', 'young'); ?></button>
