@@ -6862,6 +6862,10 @@ footer {
     order: -1;
   }
 
+  #portfolio .button-group {
+    display: flex;
+    overflow-x: scroll;
+  }
   #portfolio .button-group .button {
     padding: 0 15px 15px 15px;
     font-size: 12px;
@@ -24981,6 +24985,10 @@ footer h3 {
     order: -1;
   }
 
+  #portfolio .button-group {
+    display: flex;
+    overflow-x: scroll;
+  }
   #portfolio .button-group .button {
     padding: 0 15px 15px 15px;
     font-size: 12px;
