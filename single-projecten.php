@@ -24,7 +24,7 @@ get_header();
 
                 </div>
                 <div class="col-sm-12 col-lg-6 pr-lg-0">
-                    <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'thumbnail ')) ?>
+                    <?php echo get_the_post_thumbnail(get_the_ID(), 'large', array('class' => 'thumbnail ')) ?>
 
                 </div>
             </div>
