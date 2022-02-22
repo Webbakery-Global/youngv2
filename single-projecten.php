@@ -16,7 +16,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-6 pr-lg-3 pl-lg-0">
-                    <h1 class="mb-5"><?php the_title(); ?></h1>
+                    <h1 class="mb-2"><?php the_title(); ?></h1>
                     <div class="mb-5">
                         <?php the_content(); ?>
                     </div>
