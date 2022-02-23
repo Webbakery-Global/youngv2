@@ -38,7 +38,7 @@ function eigen_login_logo()
         }
 
         #nav a, #backtoblog a {
-            color: #fff !important;
+            color: #000 !important;
             text-align: center;
             display: block;
 
