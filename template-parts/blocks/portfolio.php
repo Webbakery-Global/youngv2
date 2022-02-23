@@ -11,7 +11,7 @@
                         'hide_empty' => true,
                     ))) :
                         foreach ($terms as $term) : ?>
-                            <button id="postfilters" class="button"
+                            <button id="postfilters" class="button button_<?php echo strtolower($term->slug) ?>"
                                     data-filter=".<?php echo strtolower($term->slug) ?>"><?php echo $term->name ?></button>
                         <?php
                         endforeach;
