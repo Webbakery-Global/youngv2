@@ -76,7 +76,7 @@ get_header();
                         <div class="col-sm-12 col-md-6 col-lg-3 block">
                             <?php if ($website_url = get_field('website_url')) : ?>
                                 <h5><?php echo __('Website', 'young'); ?></h5>
-                                <a class="" href="<?php echo esc_html($website_url); ?>"><?php echo esc_html($website_url); ?></a>
+                                <a class="" href="<?php echo esc_html($website_url); ?>" target="_blank"><?php echo esc_html($website_url); ?></a>
                             <?php endif; ?>
                         </div>
                     </div>
