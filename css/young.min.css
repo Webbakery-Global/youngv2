@@ -7432,19 +7432,15 @@ footer h3 {
   background: transparent;
   border: none;
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
   outline: none;
   padding: 0 25px 15px 25px;
   margin: 0;
   font-family: "Scala Sans";
-  font-size: 32px;
-  line-height: 42px;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   #portfolio .button-group .button {
     padding: 0 1.3888888889vw 0.8333333333vw 1.3888888889vw;
-    font-size: 1.7777777778vw;
-    line-height: 2.3333333333vw;
   }
 }
 #portfolio .button-group .button:first-child {
