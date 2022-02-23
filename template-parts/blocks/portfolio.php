@@ -6,8 +6,8 @@
                 <div class="button-group projects filters-button-group">
                     <button class="button is-checked" data-filter="*"><?php _e('All', 'young'); ?></button>
                     <?php if ($terms = get_terms(array(
-                        'post_type' => 'projecten',
-                        'taxonomy' => 'project_categorie',
+                        'post_type' => 'business',
+                        'taxonomy' => 'business_category',
                         'hide_empty' => true,
                     ))) :
                         foreach ($terms as $term) : ?>
