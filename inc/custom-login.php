@@ -4,13 +4,13 @@ function eigen_login_logo()
 { ?>
     <style type="text/css">
         .login {
-            background-image: url(<?php echo get_site_url(); ?>/wp-content/themes/young/assets/images/web-login.jpg);
-            background-size: cover !important;
             position: relative;
         }
 
-        .login form {
-            background: rgba(255, 255, 255, 0.8) !important;
+        #loginform {
+            background: rgba(255, 255, 255, 0) !important;
+            border: none;
+            box-shadow: none;
         }
 
         .wp-core-ui .button-primary {
@@ -23,10 +23,10 @@ function eigen_login_logo()
         }
 
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_site_url(); ?>/wp-content/themes/young/assets/svg/logo-dark.svg);
+            background-image: url(<?php echo get_template_directory_uri(); ?>/assets/svg/YOUNG-venture-group-logo.svg);
             width: 300px;
             height: 50px;
-            background-size: cover;
+            background-size: contain;
         }
 
         #loginform {

@@ -27,8 +27,8 @@
             <?php
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $args = array(
-                'post_type' => 'projecten',
-                'taxonomy' => 'category',
+                'post_type' => 'business',
+                'taxonomy' => 'business_category',
                 'post_status' => 'publish',
                 'posts_per_page' => -1,
 

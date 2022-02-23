@@ -35,7 +35,7 @@ if (!empty($block['align'])) {
                     <?php else : ?>
                     <?php echo get_the_post_thumbnail($post_id, 'large', array('class' => 'project_thubmnail')) ?>
                     <?php endif; ?>
-                    <?php if ( get_field('toon_titel', $post_id) === true) : ?>
+                    <?php if ( get_field('toon_titel', $post_id) === false) : ?>
                     <div class="title_box no_title"><i class="far fa-plus"></i></div>
                     <?php else : ?>
                     <div class="title_box">
