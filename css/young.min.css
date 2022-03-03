@@ -6868,8 +6868,9 @@ footer {
   }
   #portfolio .button-group .button {
     padding: 0 15px 15px 15px;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1d1d1b;
   }
 
   footer .footer_links {
@@ -25040,8 +25041,9 @@ footer h3 {
   }
   #portfolio .button-group .button {
     padding: 0 15px 15px 15px;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1d1d1b;
   }
 
   footer .footer_links {
