@@ -20,13 +20,24 @@ get_header();
                     <div class="mb-5">
                         <?php the_content(); ?>
                     </div>
-
-
                 </div>
-                <div class="col-sm-12 col-lg-6 pr-lg-0">
-                    <?= !empty($img = get_field( 'business_img' )) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'thumbnail']) : '' ?>
-
-
+                <div class="col-sm-12 col-lg-6 pr-lg-0 col_right">
+                    <div class="venture_slider_box">
+                        <div class="venture_slider">
+                            <?= !empty($img = get_field('business_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'thumbnail']) : '' ?>
+                            <?php
+                            $gallery = get_field('gallery');
+                            if ($gallery) : ?>
+                                <?php foreach ($gallery as $image) : ?>
+                                    <?= !empty($image) ? wp_get_attachment_image($image['id'], 'full', false, ['class' => 'thumbnail']) : '' ?>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
+                        <div class="arrows">
+                            <a class="prev_slide"><i class="fa-solid fa-chevron-left"></i></a>
+                            <a class="next_slide"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row mt-5">
@@ -77,7 +88,8 @@ get_header();
                         <div class="col-sm-12 col-md-6 col-lg-3 block">
                             <?php if ($website_url = get_field('website_url')) : ?>
                                 <h5><?php echo __('Website', 'young'); ?></h5>
-                                <a class="" href="<?php echo esc_html($website_url); ?>" target="_blank"><?php echo esc_html($website_url); ?></a>
+                                <a class="" href="<?php echo esc_html($website_url); ?>"
+                                   target="_blank"><?php echo esc_html($website_url); ?></a>
                             <?php endif; ?>
                         </div>
                     </div>

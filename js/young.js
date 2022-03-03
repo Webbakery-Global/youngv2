@@ -19,6 +19,17 @@ $(document).ready(function () {
         }
     };
 
+    $('.venture_slider').slick({
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        dots: true,
+        prevArrow: $('.prev_slide'),
+        nextArrow: $('.next_slide'),
+    });
+
 
     /* Hamburger menu */
     let isOpen = false;

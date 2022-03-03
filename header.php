@@ -20,6 +20,7 @@ $container = get_theme_mod('understrap_container_type');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/vfp6lcl.css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/aos.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/all.min.css" rel="stylesheet">
