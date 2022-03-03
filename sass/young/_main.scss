@@ -1,0 +1,661 @@
+@charset "UTF-8";
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 93px 0 0 0;
+  padding-top: 150px!important;
+
+
+  @include media-breakpoint-lg() {
+    margin: ratio-vw(93px) 0 0 0;
+    padding-top: ratio-vw(150px)!important;
+  }
+}
+
+footer {
+  margin-top: 150px!important;
+
+  @include media-breakpoint-lg() {
+    margin-top: ratio-vw(150px)!important;
+  }
+}
+
+body, #page {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+a {
+  cursor: pointer;
+  color: unset;
+}
+
+.relative {
+  position: relative;
+}
+
+
+/* Colors and Fonts */
+$white: #fff;
+$black: #1d1d1b;
+$trans: transparent;
+$lightbrown: #eae9e5;
+$green: #707068;
+$brown: #6c5a5c;
+$gray: #aaa196;
+$lightgray: #eae8e3;
+$darkgray: #89827e;
+
+body {
+  color: #000;
+  font-size: 1rem;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+}
+
+.menu-menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.languages {
+  &.nl {
+    a {
+      padding-right: 0 !important;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -7px;
+        top: 50%;
+        background: $black;
+        height: 15px;
+        width: 1px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.wp-block-columns {
+  margin-bottom: 0;
+
+  .container {
+    padding: 50px 15px;
+  }
+
+  .wp-block-column {
+    .wp-block-image {
+      margin-bottom: 0;
+
+      .fit {
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+
+    .button {
+      width: max-content;
+    }
+  }
+}
+
+
+.projects {
+  a {
+    cursor: pointer;
+    display: flex;
+  }
+}
+
+.cta {
+  background-color: $gray;
+  padding: 75px;
+
+  h3 {
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+
+  p {
+    margin-bottom: 35px;
+  }
+
+  .btn {
+    margin: 20px auto 0 auto;
+
+  }
+}
+
+.full_header {
+  position: relative;
+  height: calc(100vh - 93px);
+  background-size: cover;
+  color: $white;
+
+  @include media-breakpoint-lg() {
+    height: calc(100vh - #{ratio-vw(93px)});
+  }
+
+  .header_video {
+    position: absolute;
+    height: calc(100vh - 93px);
+    width: 100%;
+    object-fit: cover;
+
+    @include media-breakpoint-lg() {
+      height: calc(100vh - #{ratio-vw(93px)});
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 10vh;
+  }
+
+  .arrows {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .down_right {
+    right: 0;
+  }
+}
+
+#intro {
+  p {
+    font-size: 1.866666em;
+    line-height: 138.5%;
+    letter-spacing: .07em;
+  }
+}
+
+.projects {
+  img {
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
+.image_box {
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.home {
+  padding-top: 0!important;
+
+  #wrapper-navbar {
+    border-color: $trans;
+
+    &.scrolled-up {
+      border-color: $black;
+    }
+  }
+}
+
+.home, .page-template-gray, .single-projecten {
+  background: $lightbrown;
+
+  #wrapper-navbar {
+    background: $lightbrown;
+  }
+}
+
+
+.page-template-brown {
+  background: $brown;
+
+  #wrapper-navbar {
+    background: $brown;
+  }
+}
+
+.page-template-green {
+  background: $green;
+
+  #wrapper-navbar {
+    background: $green;
+  }
+}
+
+.page-template-darkgray{
+  background: $darkgray;
+
+  #wrapper-navbar {
+    background: $darkgray;
+  }
+}
+
+.page-template-news, .single-post {
+  background: $lightgray;
+
+  #wrapper-navbar {
+    background: $lightgray;
+  }
+}
+
+.socials {
+  a {
+    margin: 0 5px;
+
+    &:first-child {
+      margin: 0 5px 0 0;
+    }
+  }
+  i {
+    font-size: 20px;
+  }
+}
+.masonry-grid {
+  margin: 0 -15px;
+}
+
+.mansory {
+
+  .mansory_block {
+    margin-bottom: 30px;
+    float: left;
+
+    .block {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+      }
+
+      .content {
+        background: $lightgray;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        overflow: hidden;
+        padding: 25px;
+        transition: all .3s ease-in-out;
+
+        .btn {
+          position: absolute;
+          bottom: 25px;
+          left: 25px;
+        }
+      }
+
+      .title_box {
+        position: absolute;
+        bottom: 25px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 5px 20px 5px 25px;
+        border-radius: 20px 0 0 20px;
+        transition: all .6s ease-in-out .1s;
+        overflow: hidden;
+        height: 38px;
+        display: flex;
+        align-items: center;
+
+        .title {
+          position: relative;
+          font-weight: 600;
+          transition: right .3s ease-in-out 0.1s, font-size .15s ease-in-out 0.1s, display .3s ease-in-out;
+          right: -500%;
+          font-size: 0;
+          overflow: hidden;
+          width: 0;
+          display: flex;
+
+        }
+
+        i {
+          position: relative;
+          transition: all .3s linear;
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        .title_box {
+          padding: 5px 25px 5px 25px;
+
+          &.no_title {
+
+            i {
+              font-size: 16px;
+              right: unset;
+              opacity: 1;
+            }
+
+          }
+
+          i {
+            font-size: 0;
+            right: -100%;
+            opacity: 0;
+          }
+
+          .title {
+            font-size: 16px;
+            right: 0;
+            width: 100%;
+
+          }
+        }
+      }
+
+      &.active {
+        .content {
+          overflow: visible;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &:nth-child(1), &:nth-child(9) {
+      .block {
+        height: 440px;
+
+        img {
+          height: 440px;
+        }
+      }
+    }
+
+    &:nth-child(2), &:nth-child(7), &:nth-child(8) {
+      .block {
+        height: 595px;
+
+        img {
+          height: 595px;
+        }
+      }
+    }
+
+    &:nth-child(3), &:nth-child(6), &:nth-child(5) {
+      .block {
+        height: 320px;
+
+        img {
+          height: 320px;
+        }
+      }
+    }
+
+     &:nth-child(4){
+      .block {
+        height: 445px;
+
+        img {
+          height: 445px;
+        }
+      }
+    }
+  }
+}
+
+.business_projects {
+  padding: 35px 0;
+
+  .business_item {
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    img {
+      width: 80%;
+      height: auto;
+      max-height: 80px;
+      object-fit: contain;
+      margin: 0 15px;
+    }
+
+    &:first-child {
+      justify-content: flex-start;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.business_projects_overview {
+  .project_info {
+    margin-bottom: 100px;
+
+    .img_column {
+      text-align: left;
+
+      img {
+        width: 90%;
+        height: 100%;
+        max-height: 350px;
+        object-fit: cover;
+      }
+    }
+
+    .content_column {
+      display: grid;
+      margin-top: 20px;
+
+      .subtitle {
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+
+      h3 {
+        margin-bottom: 25px;
+      }
+
+      .btn {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+.news_overview {
+  .post_img {
+    img {
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+
+  .post_content {
+    display: grid;
+
+    .subtitle {
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .btn {
+      align-self: flex-end;
+    }
+
+  }
+}
+
+
+
+.socials_text {
+  margin: 0 auto;
+
+  .social_icon_text {
+    display: block;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+
+
+
+div.wpforms-container-full {
+  width: 100%;
+  margin: 0;
+
+
+  label {
+    font-size: $primary!important;
+    font-weight: 400!important;
+  }
+
+  .wpforms-submit {
+    font-size: $primary!important;
+    float: right;
+    background: $black!important;
+    color: $white!important;
+    border: none!important;
+  }
+
+  input, textarea {
+    background: $trans!important;
+  }
+}
+
+footer {
+  background: $lightbrown;
+}
+
+.footer {
+  padding: 50px 15px;
+
+  #footer_logo {
+    height: 25px;
+    margin-left: -25px;
+  }
+}
+
+.bottom_bar {
+  background: $lightgray;
+  padding: 35px 0;
+
+  span, a {
+    font-size: 16px;
+    font-family: $primary;
+  }
+}
+
+
+@keyframes fadeInUp {
+  0% {transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  0% {transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeInUp {
+  0% {transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity: 1;
+  }
+}
+
+.video_block {
+  position: relative;
+
+  .half_video {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    max-width: 100%;
+    margin-left: 50px;
+  }
+}
+
+
+.wpforms-field-container {
+  font-family: $primary!important;
+
+  input, textarea{
+    border-color: $black!important;
+  }
+
+  .wpforms-submit {
+    background: $black;
+    font-family: $primary!important;
+  }
+}
+
+.wpforms-container ::-webkit-input-placeholder { /* Chrome and Safari */
+  color: $black;
+}
+
+.wpforms-container :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $black;
+  opacity: 1;
+}
+
+.wpforms-container ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $black;
+  opacity: 1;
+}
+
+.wpforms-container :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $black;
+}
+
+.wpforms-container ::-ms-input-placeholder { /* Microsoft Edge */
+  color: $black;
+}

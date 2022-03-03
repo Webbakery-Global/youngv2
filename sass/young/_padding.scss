@@ -1,0 +1,228 @@
+.pt-350 {
+  padding-top: 350px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(350px);
+  }
+}
+
+.pt-250 {
+  padding-top: 250px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(250px);
+  }
+}
+
+.pb-250 {
+  padding-bottom: 250px;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(250px);
+  }
+}
+
+.pt-200 {
+  padding-top: 200px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(200px);
+  }
+}
+
+.pb-200 {
+  padding-bottom: 200px;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(200px);
+  }
+}
+
+.pt-150 {
+  padding-top: 150px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(150px);
+  }
+}
+
+.pb-150 {
+  padding-bottom: 150px;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(150px);
+  }
+}
+
+.pt-115 {
+  padding-top: 115px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(115px);
+  }
+}
+
+.pb-115 {
+  padding-bottom: 115px;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(115px);
+  }
+}
+
+.pt-100 {
+  padding-top: 100px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(100px);
+  }
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(100px);
+  }
+}
+
+.pt-75 {
+  padding-top: 75px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(75px);
+  }
+}
+
+.pb-75 {
+  padding-bottom: 75px;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(75px);
+  }
+}
+
+
+.pt-50 {
+  padding-top: 50px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(50px);
+  }
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(50px);
+  }
+}
+
+.pt-35 {
+  padding-top: 35px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(35px);
+  }
+}
+
+.pb-35 {
+  padding-bottom: 35px;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(35px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .pt-350 {
+    padding-top: 250px;
+  }
+
+  .pt-250 {
+    padding-top: 200px;
+  }
+  .pt-200 {
+    padding-top: 75px;
+  }
+  .pb-200 {
+    padding-bottom: 75px;
+  }
+
+  .pt-150 {
+    padding-top: 75px;
+  }
+
+  .pt-100 {
+    padding-top: 50px;
+  }
+
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+
+  .pb-115 {
+    padding-bottom: 75px;
+  }
+
+  .pt-35 {
+    padding-top: 15px;
+  }
+}
+
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-75 {
+  margin-top: 75px;
+}
+
+.mt-100 {
+  margin-top: 75px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-75 {
+  margin-bottom: 75px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.img_left {
+  margin-right: 25px;
+}
+
+.img_right {
+  margin-left: 25px;
+}

@@ -1,0 +1,272 @@
+$white: #fff;
+$black: #000;
+$blue: blue;
+$red: red;
+
+.wp-block-webbakery-container {
+  position: relative;
+  border: 1px solid $red;
+
+  &::before {
+    content: "Container";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background: $white;
+    color: $black;
+    border: 1px solid $black;
+    padding: 5px;
+  }
+
+  .block-editor-block-list__layout {
+    padding: 15px 0;
+  }
+}
+
+.wp-block-webbakery-section-block{
+  position: relative;
+  border: 1px dotted $blue;
+
+
+  &::before {
+    content: "Section";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $white;
+    color: $black;
+    border: 1px solid $black;
+    padding: 5px;
+  }
+
+  .wp-block-webbakery-container {
+
+
+    &::before {
+      left: 0;
+    }
+  }
+}
+
+.block-editor-block-list__block {
+  .wp-block.block-core-columns {
+    position: relative;
+    padding-top: 25px;
+
+    &::before {
+      content: "Column";
+      position: absolute;
+      top: 4px;
+      left: 8px;
+      background: $white;
+      color: $black;
+      border: 1px solid $black;
+      padding: 5px;
+    }
+  }
+}
+
+
+.mansory {
+
+
+
+
+  .masonry-grid {
+    position: relative;
+    min-height: 786px;
+
+    &::before {
+      content: "Dit is een voorbeeld dus niet aanpasbaar! ";
+      background: red;
+      color: #fff;
+      padding: 10px;
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99;
+      text-align: center;
+    }
+
+    &::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .col-lg-4 {
+      max-width: 33.33333%;
+      margin: 0;
+    }
+  }
+
+  .mansory_block {
+    margin-bottom: 30px;
+    float: left;
+
+    .block {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+      }
+
+      .content {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        overflow: hidden;
+        padding: 25px;
+        transition: all .3s ease-in-out;
+
+        .btn {
+          position: absolute;
+          bottom: 25px;
+          left: 25px;
+        }
+      }
+
+      .title_box {
+        position: absolute;
+        bottom: 25px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 5px 20px 5px 25px;
+        border-radius: 20px 0 0 20px;
+        transition: all .6s ease-in-out .1s;
+        overflow: hidden;
+
+        .title {
+          position: relative;
+          font-weight: 600;
+          transition: right .3s ease-in-out, font-size .15s ease-in-out;
+          right: -150%;
+          font-size: 0;
+        }
+
+        i {
+          position: relative;
+          transition: all .5s ease-in-out, font-size .3s ease-in-out;
+        }
+      }
+
+      &:hover {
+        .title_box {
+          padding: 5px 25px 5px 25px;
+
+          i {
+            font-size: 0;
+            left: -100%;
+
+          }
+
+          .title {
+            font-size: 16px;
+            right: 0;
+          }
+        }
+      }
+      &.active {
+        .content {
+          overflow: visible;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    .block {
+      height: 300px;
+
+      img {
+        height: 300px;
+      }
+    }
+  }
+}
+
+.business_projects {
+  padding: 35px 0;
+
+  .row {
+    display: flex;
+  }
+
+  .business_item {
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+
+    img {
+      width: 80%;
+      height: auto;
+      max-height: 80px;
+      object-fit: contain;
+      margin: 0 15px;
+    }
+
+    &:first-child {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.news_overview {
+  .row {
+    display: flex;
+
+    .col-lg-6 {
+      width: 50%;
+
+      &.post_content {
+        padding: 10px 25px;
+      }
+    }
+  }
+}
+
+.business_projects_overview {
+  position: relative;
+
+  &::before {
+    content: "Dit is een voorbeeld dus niet aanpasbaar! ";
+    background: red;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    text-align: center;
+  }
+
+  &::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .row {
+    display: grid;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+}
