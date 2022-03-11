@@ -7113,6 +7113,7 @@ footer h3 {
   min-height: 600px;
   max-height: 700px;
   width: 800px;
+  max-width: 100%;
   background: #eae8e3;
   position: fixed;
   top: 50%;
