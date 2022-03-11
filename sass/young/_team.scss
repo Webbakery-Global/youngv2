@@ -1,4 +1,7 @@
 .team_overview {
+  position: relative;
+  z-index: 10;
+  
   .team {
     .profile_img {
       height: 300px;

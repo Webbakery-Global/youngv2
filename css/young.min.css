@@ -7096,6 +7096,10 @@ footer h3 {
   font-weight: 300;
 }
 
+.team_overview {
+  position: relative;
+  z-index: 10;
+}
 .team_overview .team .profile_img {
   height: 300px;
   width: 100%;
