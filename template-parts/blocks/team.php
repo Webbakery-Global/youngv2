@@ -33,7 +33,7 @@
 
                                     <div class="socials">
                                         <?php if ( $linkedin = get_field( 'linkedin', get_the_ID() ) ) : ?>
-                                            <a href="<?php echo esc_url( $linkedin ); ?>"><i class="fab fa-linkedin"></i></a>
+                                            <a href="<?php echo esc_url( $linkedin ); ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
                                         <?php endif; ?>
                                         <?php if ( $email = get_field( 'email', get_the_ID() ) ) : ?>
                                             <a href="mailto:<?php echo $email; ?>"><i class="far fa-envelope"></i></a>

@@ -13,7 +13,7 @@ if (!empty($block['align'])) {
 <span class="d-none">Socials</span>
 <div class="<?php echo esc_attr($className); ?>">
     <?php if ( $linkedin = get_field( 'linkedin' ) ) : ?>
-        <a href="<?php echo esc_url( $linkedin ); ?>"><i class="fab fa-linkedin"></i></a>
+        <a href="<?php echo esc_url( $linkedin ); ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
     <?php endif; ?>
     <?php if ( $email = get_field( 'email' ) ) : ?>
         <a href="mailto:<?php echo $email; ?>"><i class="far fa-envelope"></i></a>
