@@ -21,7 +21,7 @@
                         <h3><?php the_title(); ?></h3>
                     </a>
                     <a class="btn btn_arrow_left" target="_self"><i class="far fa-long-arrow-alt-right"
-                                                                    aria-hidden="true"></i>Lees meer</a>
+                                                                    aria-hidden="true"></i><?php echo __('Read more', 'young'); ?></a>
 
                     <div class="team_modal team_modal_<?= $slug ?>">
                         <div class="container">

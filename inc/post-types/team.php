@@ -49,7 +49,7 @@ function teamleden()
         'exclude_from_search' => true,
         'publicly_queryable' => true,
         'capability_type' => 'post',
-        'show_in_rest' => true,
+        'show_in_rest' => false,
         'menu_icon' => 'dashicons-groups'
     );
     register_post_type('teamleden', $args);
