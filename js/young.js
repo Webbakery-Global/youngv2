@@ -11,11 +11,16 @@ $(document).ready(function () {
         $("#wrapper-navbar").removeClass("scrolled-up").removeClass("scrolled-down");
     });
 
+    $(".close_modal").click(function () {
+        $(".team_modal").removeClass("open");
+    });
+
     document.onkeydown = function (evt) {
         evt = evt || window.event;
         if (evt.keyCode == 27) {
             $(".form").removeClass("active");
             $("body, html").removeClass("no-scroll");
+            $(".team_modal").removeClass("open");
         }
     };
 

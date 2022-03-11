@@ -193,5 +193,16 @@ function register_acf_block_types()
             'keywords' => array('portfolio')
         )
     );
+    acf_register_block_type(
+        array(
+            'name' => 'Team',
+            'title' => ('Team'),
+            'description' => _('Team'),
+            'category' => 'webbakery-gutenberg-blocks',
+            'render_template' => 'template-parts/blocks/team.php',
+            'icon' => 'grid-view',
+            'keywords' => array('team')
+        )
+    );
 }
 

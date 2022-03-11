@@ -8,6 +8,7 @@ add_theme_support('align-wide');
 add_theme_support('title-tag');
 require_once(get_stylesheet_directory() . '/inc/post-types/projecten.php');
 require_once(get_stylesheet_directory() . '/inc/post-types/business.php');
+require_once(get_stylesheet_directory() . '/inc/post-types/team.php');
 
 
 function be_gutenberg_scripts()
