@@ -13,6 +13,7 @@ $(document).ready(function () {
 
     $(".close_modal").click(function () {
         $(".team_modal").removeClass("open");
+        $("body, html").removeClass("no-scroll");
     });
 
     document.onkeydown = function (evt) {

@@ -56,6 +56,7 @@
                 <script>
                     $(".open_<?= $slug ?>").click(function () {
                         $(".team_modal_<?= $slug ?>").toggleClass("open");
+                        $("body, html").toggleClass("no-scroll");
                     });
                 </script>
                 <?php wp_reset_postdata(); ?>
