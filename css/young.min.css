@@ -5930,6 +5930,10 @@ body, #page {
   overflow: hidden;
 }
 
+body.no-scroll, html.no-scroll {
+  overflow: hidden !important;
+}
+
 a {
   cursor: pointer;
   color: unset;
