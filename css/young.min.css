@@ -7111,7 +7111,7 @@ footer h3 {
   visibility: hidden;
   opacity: 0;
   min-height: 600px;
-  max-height: 800px;
+  max-height: 700px;
   width: 800px;
   background: #eae8e3;
   position: fixed;
@@ -7121,6 +7121,7 @@ footer h3 {
   transition: all 0.3s ease-in-out;
   padding: 50px 25px;
   z-index: 10;
+  overflow: scroll;
 }
 .team_overview .team_modal.open {
   visibility: visible;

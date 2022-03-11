@@ -21,5 +21,4 @@ if (!empty($block['align'])) {
     <?php if ( $telefoonnummer = get_field( 'telefoonnummer' ) ) : ?>
         <a href="tel:<?php echo esc_html( $telefoonnummer ); ?>"><i class="fas fa-phone-alt"></i></a>
     <?php endif; ?>
-
 </div>

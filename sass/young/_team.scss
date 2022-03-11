@@ -19,7 +19,7 @@
     visibility: hidden;
     opacity: 0;
     min-height: 600px;
-    max-height: 800px;
+    max-height: 700px;
     width: 800px;
     background: $lightgray;
     position: fixed;
@@ -29,6 +29,7 @@
     transition: all 0.3s ease-in-out;
     padding: 50px 25px;
     z-index: 10;
+    overflow: scroll;
 
     &.open {
       visibility: visible;

@@ -30,6 +30,22 @@
                                     <p class="function"><?php the_field('functie', get_the_ID()); ?></p>
                                     <h3><?php the_title(); ?></h3>
                                     <?php the_field('hover_info', get_the_ID()); ?>
+
+                                    <div class="socials">
+                                        <?php if ( $linkedin = get_field( 'linkedin', get_the_ID() ) ) : ?>
+                                            <a href="<?php echo esc_url( $linkedin ); ?>"><i class="fab fa-linkedin"></i></a>
+                                        <?php endif; ?>
+                                        <?php if ( $email = get_field( 'email', get_the_ID() ) ) : ?>
+                                            <a href="mailto:<?php echo $email; ?>"><i class="far fa-envelope"></i></a>
+                                        <?php endif; ?>
+                                        <?php if ( $telefoonnummer = get_field( 'telefoonnummer', get_the_ID() ) ) : ?>
+                                            <a href="tel:<?php echo esc_html( $telefoonnummer ); ?>"><i class="fas fa-phone-alt"></i></a>
+                                        <?php endif; ?>
+                                    </div>
+
+                                    <?php if( $btn_link = get_field('button_link', get_the_ID() ) ) : ?>
+                                    <a class="btn btn_arrow_left mt-4" href="<?= $btn_link ?>" target="_self"><i class="far fa-long-arrow-alt-right" aria-hidden="true"></i><?php the_field('button_tekst', get_the_ID()); ?></a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
