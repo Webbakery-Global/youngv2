@@ -14,7 +14,7 @@
                 $slug = get_post_field('post_name', get_the_ID());
                 ?>
 
-                <div class="col-sm-12 col-lg-4 team">
+                <div class="col-sm-12 col-lg-4 team mb-5">
                     <a class="open_<?= $slug ?>">
                         <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'profile_img')) ?>
                         <p class="function"><?php the_field('functie', get_the_ID()); ?></p>
