@@ -8,20 +8,15 @@
                 'posts_per_page' => -1, // Aantal posts
                 'order' => 'DESC',
             );
-
+            $order = 1;
             $loop = new WP_Query($args);
-            $teamNumber = 1;
             while ($loop->have_posts()) : $loop->the_post();
                 $slug = get_post_field('post_name', get_the_ID());
 
                 ?>
 
-            <?php if($teamNumber === 3) : ?>
-            <div class="col-sm-12 col-lg-4 team mb-5">
-            </div>
-            <?php else : ?>
 
-                <div class="col-sm-12 col-lg-4 team mb-5">
+                <div class="col-sm-12 col-lg-4 team mb-5 position-<?= $order ?>">
                     <a class="open_<?= $slug ?>">
                         <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'profile_img')) ?>
                         <p class="function"><?php the_field('functie', get_the_ID()); ?></p>
@@ -66,13 +61,11 @@
                         $("body, html").toggleClass("no-scroll");
                     });
                 </script>
-
-            <?php endif; ?>
-
                 <?php
-                $teamNumber++;
+                $order++;
                 wp_reset_postdata(); ?>
             <?php endwhile; ?>
+            <div class="col-sm-12 col-lg-4 order-3"></div>
         </div>
     </div>
 </div>
