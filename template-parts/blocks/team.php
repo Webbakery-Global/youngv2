@@ -10,15 +10,16 @@
             );
 
             $loop = new WP_Query($args);
+            $teamNumber = 1;
             while ($loop->have_posts()) : $loop->the_post();
                 $slug = get_post_field('post_name', get_the_ID());
-                $teamNumber = 1;
+
                 ?>
 
             <?php if($teamNumber === 3) : ?>
             <div class="col-sm-12 col-lg-4 team mb-5">
             </div>
-            <?php endif; ?>
+            <?php else : ?>
 
                 <div class="col-sm-12 col-lg-4 team mb-5">
                     <a class="open_<?= $slug ?>">
@@ -66,6 +67,7 @@
                     });
                 </script>
 
+            <?php endif; ?>
 
                 <?php
                 $teamNumber++;
