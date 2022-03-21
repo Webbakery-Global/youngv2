@@ -43,49 +43,37 @@ get_header();
             <div class="row mt-5">
                 <div class="col-sm-12 col-lg-12 px-0">
                     <div class="info_block row">
-                        <div class="col-sm-12 col-md-6 col-lg-3 block">
+                        <div class="col-sm-12 col-md-6 col-lg-4 block">
                             <?php if ($founded = get_field('founded')) : ?>
                                 <h5><?php echo __('Founded', 'young'); ?></h5>
                                 <p><?php echo esc_html($founded); ?></p>
                             <?php endif; ?>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 block">
-                            <?php if ($founders = get_field('founders')) : ?>
-                                <h5><?php echo __('Founders', 'young'); ?></h5>
-                                <p><?php echo esc_html($founders); ?></p>
-                            <?php endif; ?>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 block">
+                        <div class="col-sm-12 col-md-6 col-lg-4 block">
                             <?php if ($location = get_field('location')) : ?>
                                 <h5><?php echo __('Location', 'young'); ?></h5>
                                 <p><?php echo esc_html($location); ?></p>
                             <?php endif; ?>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 block">
+                        <div class="col-sm-12 col-md-6 col-lg-4 block">
                             <?php if ($sector = get_field('sector')) : ?>
                                 <h5><?php echo __('Sector', 'young'); ?></h5>
                                 <p><?php echo esc_html($sector); ?></p>
                             <?php endif; ?>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 block">
-                            <?php if ($partner_involved = get_field('partner_involved')) : ?>
-                                <h5><?php echo __('Partner Involved', 'young'); ?></h5>
-                                <p><?php echo esc_html($partner_involved); ?></p>
-                            <?php endif; ?>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 block">
+                        <div class="col-sm-12 col-md-6 col-lg-4 block">
                             <?php if ($co_investor = get_field('co-investor')) : ?>
                                 <h5><?php echo __('Co-investor', 'young'); ?></h5>
                                 <p><?php echo esc_html($co_investor); ?></p>
                             <?php endif; ?>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 block">
+                        <div class="col-sm-12 col-md-6 col-lg-4 block">
                             <?php if ($year_invested = get_field('year_invested')) : ?>
                                 <h5><?php echo __('Year Invested', 'young'); ?></h5>
                                 <p><?php echo esc_html($year_invested); ?></p>
                             <?php endif; ?>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 block">
+                        <div class="col-sm-12 col-md-6 col-lg-4 block">
                             <?php if ($website_url = get_field('website_url')) : ?>
                                 <h5><?php echo __('Website', 'young'); ?></h5>
                                 <a class="" href="<?php echo esc_html($website_url); ?>"
