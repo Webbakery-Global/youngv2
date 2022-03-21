@@ -229,11 +229,11 @@
   }
 
   .info_block {
-    padding: 25px;
+    padding: 25px 0;
     color: $black;
 
     @include media-breakpoint-lg() {
-      padding: ratio-vw(25px);
+      padding: ratio-vw(25px) 0;
     }
 
     .block {

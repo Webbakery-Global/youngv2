@@ -7711,12 +7711,12 @@ footer h3 {
   visibility: hidden;
 }
 #single_project .info_block {
-  padding: 25px;
+  padding: 25px 0;
   color: #1d1d1b;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   #single_project .info_block {
-    padding: 1.3888888889vw;
+    padding: 1.3888888889vw 0;
   }
 }
 #single_project .info_block .block {
