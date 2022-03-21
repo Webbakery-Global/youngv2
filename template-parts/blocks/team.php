@@ -22,7 +22,7 @@
                         <p class="function"><?php the_field('functie', get_the_ID()); ?></p>
                         <h3><?php the_title(); ?></h3>
                     </a>
-                    <a class="btn btn_arrow_left" target="_self"><i class="far fa-long-arrow-alt-right"
+                    <a class="btn btn_arrow_left open_<?= $slug ?>" target="_self"><i class="far fa-long-arrow-alt-right"
                                                                     aria-hidden="true"></i><?php echo __('Read more', 'young'); ?></a>
 
                     <div class="team_modal team_modal_<?= $slug ?>">
@@ -46,7 +46,7 @@
                                     </div>
 
                                     <?php if( $btn_link = get_field('button_link', get_the_ID() ) ) : ?>
-                                    <a class="btn btn_arrow_left mt-4" href="<?= $btn_link ?>" target="_self"><i class="far fa-long-arrow-alt-right" aria-hidden="true"></i><?php the_field('button_tekst', get_the_ID()); ?></a>
+                                    <a class="btn btn_arrow_left mt-4 " href="<?= $btn_link ?>" target="_self"><i class="far fa-long-arrow-alt-right" aria-hidden="true"></i><?php the_field('button_tekst', get_the_ID()); ?></a>
                                     <?php endif; ?>
                                 </div>
                             </div>
