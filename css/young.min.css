@@ -7127,11 +7127,17 @@ footer h3 {
 .team_overview .team.order-3 {
   order: 3;
 }
-.team_overview .team.position-3 {
+.team_overview .team.position-4 {
   order: 4;
 }
-.team_overview .team.position-4 {
+.team_overview .team.position-5 {
   order: 5;
+}
+.team_overview .team.position-6 {
+  order: 6;
+}
+.team_overview .team.position-7 {
+  order: 7;
 }
 .team_overview .team .team_modal {
   visibility: hidden;
