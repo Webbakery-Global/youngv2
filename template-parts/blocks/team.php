@@ -8,13 +8,11 @@
                 'posts_per_page' => -1, // Aantal posts
                 'order' => 'DESC',
             );
-            $order = 1;
+            $order = 0;
             $loop = new WP_Query($args);
             while ($loop->have_posts()) : $loop->the_post();
                 $slug = get_post_field('post_name', get_the_ID());
-
                 ?>
-
 
                 <div class="col-sm-12 col-lg-4 team mb-5 position-<?= $order ?>">
                     <a class="open_<?= $slug ?>">

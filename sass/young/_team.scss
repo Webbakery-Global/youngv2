@@ -15,6 +15,10 @@
       margin-bottom: 5px;
     }
 
+    &.position-0 {
+      order: 0;
+    }
+
     &.position-1 {
       order: 1;
     }
@@ -36,54 +40,53 @@
     }
 
 
-  }
-
-  .team_modal {
-    visibility: hidden;
-    opacity: 0;
-    min-height: 600px;
-    max-height: 700px;
-    width: 800px;
-    max-width: 100%;
-    background: $lightgray;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 300%);
-    transition: all 0.3s ease-in-out;
-    padding: 50px 25px;
-    z-index: 10;
-    overflow: scroll;
-
-    &.open {
-      visibility: visible;
-      opacity: 1;
-      transform: translate(-50%, -50%);
-    }
-
-    .close_modal {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 50px;
-      width: 50px;
-      color: $white;
-      background: $black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 20px;
+    .team_modal {
+      visibility: hidden;
+      opacity: 0;
+      min-height: 600px;
+      max-height: 700px;
+      width: 800px;
+      max-width: 100%;
+      background: $lightgray;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 300%);
       transition: all 0.3s ease-in-out;
+      padding: 50px 25px;
+      z-index: 10;
+      overflow: scroll;
 
-      &:hover {
-        color: $white;
-        background: red;
+      &.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(-50%, -50%);
       }
-    }
 
-    h3 {
-      margin-bottom: 20px;
+      .close_modal {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50px;
+        width: 50px;
+        color: $white;
+        background: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: $white;
+          background: red;
+        }
+      }
+
+      h3 {
+        margin-bottom: 20px;
+      }
     }
   }
 }

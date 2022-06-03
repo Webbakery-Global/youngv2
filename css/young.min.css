@@ -7115,6 +7115,9 @@ footer h3 {
   text-transform: uppercase;
   margin-bottom: 5px;
 }
+.team_overview .team.position-0 {
+  order: 0;
+}
 .team_overview .team.position-1 {
   order: 1;
 }
@@ -7130,7 +7133,7 @@ footer h3 {
 .team_overview .team.position-4 {
   order: 5;
 }
-.team_overview .team_modal {
+.team_overview .team .team_modal {
   visibility: hidden;
   opacity: 0;
   min-height: 600px;
@@ -7147,12 +7150,12 @@ footer h3 {
   z-index: 10;
   overflow: scroll;
 }
-.team_overview .team_modal.open {
+.team_overview .team .team_modal.open {
   visibility: visible;
   opacity: 1;
   transform: translate(-50%, -50%);
 }
-.team_overview .team_modal .close_modal {
+.team_overview .team .team_modal .close_modal {
   position: absolute;
   top: 0;
   right: 0;
@@ -7167,11 +7170,11 @@ footer h3 {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
-.team_overview .team_modal .close_modal:hover {
+.team_overview .team .team_modal .close_modal:hover {
   color: #fff;
   background: red;
 }
-.team_overview .team_modal h3 {
+.team_overview .team .team_modal h3 {
   margin-bottom: 20px;
 }
 
