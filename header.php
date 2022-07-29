@@ -28,7 +28,23 @@ defined('ABSPATH') || exit;
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://kit.fontawesome.com/eb84190e1d.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13TYD1HWRR"></script>
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){dataLayer.push(arguments);}
+
+        gtag('js', new Date());
+
+
+
+        gtag('config', 'G-13TYD1HWRR');
+
+    </script>
     <?php wp_head(); ?>
 </head>
 
